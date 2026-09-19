@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 340" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Arrow Left Facet Gradient -->
+    <linearGradient id="saengdiSymLeftFacet" x1="0%" y1="100%" x2="60%" y2="0%">
+      <stop offset="0%" stop-color="#004AD7" />
+      <stop offset="50%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#0088FF" />
+    </linearGradient>
+
+    <!-- Arrow Right Facet Gradient -->
+    <linearGradient id="saengdiSymRightFacet" x1="0%" y1="100%" x2="60%" y2="0%">
+      <stop offset="0%" stop-color="#006EFF" />
+      <stop offset="50%" stop-color="#00A2FF" />
+      <stop offset="100%" stop-color="#00D7D0" />
+    </linearGradient>
+
+    <!-- Arrowhead Gradient -->
+    <linearGradient id="saengdiSymHead" x1="0%" y1="100%" x2="70%" y2="0%">
+      <stop offset="0%" stop-color="#00C4D6" />
+      <stop offset="40%" stop-color="#00D8C0" />
+      <stop offset="75%" stop-color="#02EE9E" />
+      <stop offset="100%" stop-color="#34FCA4" />
+    </linearGradient>
+
+    <!-- Mint Pill Gradient -->
+    <linearGradient id="saengdiSymMintPill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00B876" />
+      <stop offset="50%" stop-color="#02E08A" />
+      <stop offset="100%" stop-color="#3EF8A6" />
+    </linearGradient>
+  </defs>
+
+  <!-- 'ㅅ' Left Diagonal Bar -->
+  <path d="M 75 245 L 165 155" stroke="#08326E" stroke-width="44" stroke-linecap="round" />
+
+  <!-- 'ㅅ' Right 3D Ribbon Arrow Shaft (Dual Facet Fold) -->
+  <path d="M 148 217 L 221 144 L 235 158 L 162 231 Z" fill="url(#saengdiSymLeftFacet)" />
+  <path d="M 162 231 L 235 158 L 249 144 L 176 217 Z" fill="url(#saengdiSymRightFacet)" />
+  <path d="M 148 217 C 141 224 141 236 148 243 C 155 250 167 250 174 243 L 176 241 L 148 217 Z" fill="#004AD7" />
+
+  <!-- Arrowhead (Symmetrical) -->
+  <path d="M 318 47 L 237 57 L 258 78 L 287 107 L 308 128 Z" 
+        fill="url(#saengdiSymHead)" 
+        stroke-linejoin="round" />
+
+  <rect x="172" y="104" width="56" height="32" rx="16" fill="#08326E" />
+  <rect x="236" y="110" width="32" height="68" rx="16" fill="#08326E" />
+  <circle cx="196" cy="246" r="46" fill="none" stroke="#08326E" stroke-width="36" />
+
+  <!-- '디' -->
+  <path d="M 455 76 L 395 76 C 365 76 350 91 350 121 L 350 199 C 350 229 365 244 395 244 L 455 244" 
+        fill="none" stroke="#08326E" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 485 115 L 530 70" stroke="url(#saengdiSymMintPill)" stroke-width="36" stroke-linecap="round" />
+  <rect x="494" y="124" width="38" height="146" rx="19" fill="#08326E" />
+</svg>

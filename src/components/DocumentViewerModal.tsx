@@ -99,7 +99,7 @@ export const DocumentViewerModal: React.FC<DocumentViewerModalProps> = ({
   const handleCopyText = async () => {
     let content = '';
     if (documentType === '활동 지원 계획서') {
-      content = `[생디 - 활동 지원 계획서]
+      content = `[생디 - 활동 계획서]
 ■ 기본 인적사항
 - 소속: ${student.schoolLevel} ${student.grade}
 - 성명: ${student.name}

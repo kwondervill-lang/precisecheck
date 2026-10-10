@@ -85,7 +85,7 @@ export const ActivityPlanForm: React.FC<ActivityPlanFormProps> = ({
           </div>
           <div>
             <h2 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
-              2. 활동 지원 계획서 세부 정보
+              2. 활동 계획서 세부 정보
             </h2>
             <p className="text-xs text-slate-500">
               프로젝트 활동 분류, 활동 이름, 기록 항목 및 활동 기간을 설정하세요.
@@ -357,7 +357,7 @@ export const ActivityPlanForm: React.FC<ActivityPlanFormProps> = ({
           onClick={onGenerateDocument}
           className="w-full py-3.5 px-5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all cursor-pointer"
         >
-          <span>생디 활동 지원 계획서 출력 및 미리보기</span>
+          <span>생디 활동 계획서 출력 및 미리보기</span>
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>

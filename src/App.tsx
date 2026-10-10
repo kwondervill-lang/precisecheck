@@ -121,6 +121,34 @@ export default function App() {
   const [enrichNotice, setEnrichNotice] = useState<string | null>(null);
   const [showResetModal, setShowResetModal] = useState(false);
 
+  // Auto-report height to parent iframe for seamless WordPress embedding
+  React.useEffect(() => {
+    const notifyHeight = () => {
+      const height = Math.max(
+        document.documentElement.scrollHeight,
+        document.body.scrollHeight,
+        document.documentElement.offsetHeight
+      );
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ type: 'SAENGDI_RESIZE', height }, '*');
+      }
+    };
+
+    notifyHeight();
+    const observer = new ResizeObserver(() => notifyHeight());
+    if (document.body) {
+      observer.observe(document.body);
+    }
+    window.addEventListener('resize', notifyHeight);
+    const interval = setInterval(notifyHeight, 600);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', notifyHeight);
+      clearInterval(interval);
+    };
+  }, [activeTab, documentType, isEnriching]);
+
   // 1. Preset loader
   const loadPreset = (preset: SamplePreset) => {
     setStudent({ ...preset.student });

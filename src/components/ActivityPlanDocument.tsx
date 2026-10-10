@@ -47,7 +47,7 @@ export const ActivityPlanDocument: React.FC<ActivityPlanDocumentProps> = ({
       {/* Main Document Title */}
       <div className="text-center mb-8">
         <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
-          학 생 활 동 지 원 계 획 서
+          활동 계획서
         </h1>
         <p className="text-xs text-slate-500 mt-1 font-medium">
           [ {categoryName} · {student.schoolLevel} {student.grade} ]
@@ -250,7 +250,7 @@ export const ActivityPlanDocument: React.FC<ActivityPlanDocumentProps> = ({
       {/* 제출 확인문 및 서명란 */}
       <div className="mt-12 pt-6 border-t border-slate-200 text-center space-y-4">
         <p className="text-xs sm:text-sm font-semibold text-slate-800">
-          본인은 위와 같이 성실하게 계획을 수립하고 실천하고자 활동 지원 계획서를 제출합니다.
+          본인은 위와 같이 성실하게 계획을 수립하고 실천하고자 활동 계획서를 제출합니다.
         </p>
 
         <p className="text-xs sm:text-sm font-bold text-slate-700 tracking-wider">

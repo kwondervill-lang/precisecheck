@@ -50,7 +50,7 @@ export const SpeechDocument: React.FC<SpeechDocumentProps> = ({
           {speech.schoolLevel} · {speech.audience}
         </span>
         <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
-          {roleTitle} 출마 당선 발표 연설문
+          연설문
         </h1>
         {speech.catchphrase && (
           <p className="text-sm font-bold text-teal-700 mt-2 bg-teal-50 py-1 px-4 rounded-lg inline-block border border-teal-200/60">
@@ -137,7 +137,7 @@ export const SpeechDocument: React.FC<SpeechDocumentProps> = ({
           <div className="flex items-center gap-2">
             <Mic className="w-4 h-4 text-emerald-600" />
             <h2 className="text-sm font-bold text-slate-900 tracking-tight">
-              발표 연설문 전문 (대본)
+              연설문 전문 (대본)
             </h2>
           </div>
           <span className="text-[11px] text-slate-500 font-medium">

@@ -283,7 +283,7 @@ export const SpeechForm: React.FC<SpeechFormProps> = ({
 
         <div>
           <label className="block text-xs font-bold text-slate-700 mb-1 flex items-center justify-between">
-            <span>발표 연설문 본문 (직접 수정 가능)</span>
+            <span>연설문 본문 (직접 수정 가능)</span>
             <span className="text-[11px] text-slate-400 font-normal">
               {speech.fullSpeech.length}자 ({speech.duration})
             </span>
@@ -305,7 +305,7 @@ export const SpeechForm: React.FC<SpeechFormProps> = ({
           onClick={onGenerateDocument}
           className="w-full py-3.5 px-5 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-md hover:shadow-lg flex items-center justify-center gap-2 transition-all cursor-pointer"
         >
-          <span>생디 학생 발표 연설문 출력 및 미리보기</span>
+          <span>생디 학생 연설문 출력 및 미리보기</span>
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>
